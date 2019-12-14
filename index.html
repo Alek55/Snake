@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Змейка на JS</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            letter-spacing: 3px;
+            font-family: Arial;
+        }
+        #canvas{
+            border:1px solid #000;
+            display: block;
+            margin:20px auto;
+        }
+        #start{
+            position: absolute;
+            left: 50%;
+            background: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding-top: 170px;
+            top:58px;
+        }
+        #start p{
+            display: none;
+        }
+        #start h2{
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+        #start button{
+            background: #5E9C00;
+            color:#fff;
+            border:none;
+            padding:10px 60px;
+            border-radius: 30px;
+            cursor: pointer;
+            text-transform: uppercase;
+            outline: none;
+        }
+        #score{
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="score">Счет: <span>0</span></div>
+    <div id="start">
+        <p>Итог: <span></span></p>
+        <h2>Змейка</h2>
+        <button>Начать</button>
+    </div>
+    <canvas id="canvas"></canvas>
+    <script type="text/javascript" src="snake.js"></script>
+</body>
+</html>
